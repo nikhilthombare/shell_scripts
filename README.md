@@ -11,3 +11,6 @@ $ chmod 755 mysql_user.sh
 
 3>Move to bin folder and give name
 $ mv mysql_user.sh /usr/bin/mysql_user
+
+4>run command
+$ mysql_user
