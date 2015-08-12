@@ -1,0 +1,66 @@
+#!/bin/bash
+
+sett="setting"
+saf="safari"
+chor="chrome"
+fire="firefox"
+sky="skype"
+sub="sublime"
+ato="atom"
+slk="slack"
+nt="note"
+cale="cal"
+ca="calu"
+ex="excel"
+sq="sql"
+mis="dash"
+txt="text"
+
+if [ "$1" == "$sett" ]
+then
+		open -a system\ preferences
+elif [ "$1" == "$saf" ]
+then
+		open -a safari
+elif [ "$1" == "$chor" ]
+then
+		open -a google\ chrome
+elif [ "$1" == "$fire" ]
+then
+		open -a firefox
+elif [ "$1" == "$sky" ]
+then
+	open -a skype
+elif [ "$1" == "$sub" ]
+then
+	open -a sublime\ text
+elif [ "$1" == "$ato" ]
+then
+	open -a atom
+elif [ "$1" == "$slk" ]
+then
+	open -a slack
+elif [ "$1" == "$nt" ]
+then
+	open -a notes
+elif [ "$1" == "$cale" ]
+then
+	open -a calendar
+elif [ "$1" == "$ca" ]
+then
+	open -a calculator
+elif [ "$1" == "$ex" ]
+then
+	open -a microsoft\ excel
+elif [ "$1" == "$sq" ]
+then
+	open -a sql\ power\ architect\ jdbc
+elif [ "$1" == "$mis" ]
+then
+	open -a dashboard
+elif [ "$1" == "$txt" ]
+then
+	open -a textedit
+else
+	echo "Keyword does not exit....!Check list"
+fi
