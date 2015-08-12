@@ -1,0 +1,67 @@
+#!/bin/bash
+
+sett="setting"
+saf="safari"
+chor="chrome"
+fire="firefox"
+sky="skype"
+sub="sublime"
+ato="atom"
+slk="slack"
+nt="note"
+cale="cal"
+ca="calu"
+ex="excel"
+sq="sql"
+mis="dash"
+txt="text"
+
+if [ "$1" == "$sett" ]
+then
+		osascript -e 'quit app "system preferences"'
+elif [ "$1" == "$saf" ]
+then
+		osascript -e 'quit app "safari"'
+elif [ "$1" == "$chor" ]
+then
+	osascript -e 'quit app "google chrome"'
+elif [ "$1" == "$fire" ]
+then
+	osascript -e 'quit app "firefox"'
+elif [ "$1" == "$sky" ]
+then
+	open -a skype
+	osascript -e 'quit app "skype"'
+elif [ "$1" == "$sub" ]
+then
+	osascript -e 'quit app "sublime text"'
+elif [ "$1" == "$ato" ]
+then
+	osascript -e 'quit app "atom"'
+elif [ "$1" == "$slk" ]
+then
+	osascript -e 'quit app "slack"'
+elif [ "$1" == "$nt" ]
+then
+	osascript -e 'quit app "notes"'
+elif [ "$1" == "$cale" ]
+then
+	osascript -e 'quit app "calendar"'
+elif [ "$1" == "$ca" ]
+then
+	osascript -e 'quit app "calculator"'
+elif [ "$1" == "$ex" ]
+then
+	osascript -e 'quit app "microsoft excel"'
+elif [ "$1" == "$sq" ]
+then
+	osascript -e 'quit app "sql power architect jdbc"'
+elif [ "$1" == "$mis" ]
+then
+	osascript -e 'quit app "dashboard"'
+elif [ "$1" == "$txt" ]
+then
+	osascript -e 'quit app "textedit"'
+else
+	echo "Keyword does not exit....!Check list"
+fi
