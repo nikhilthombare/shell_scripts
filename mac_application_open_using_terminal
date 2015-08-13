@@ -15,6 +15,7 @@ ex="excel"
 sq="sql"
 mis="dash"
 txt="text"
+musi="music"
 
 if [ "$1" == "$sett" ]
 then
@@ -61,6 +62,9 @@ then
 elif [ "$1" == "$txt" ]
 then
 	open -a textedit
+elif [ "$1" == "$musi" ]
+then
+	open http:\www.saavn.com
 else
 	echo "Keyword does not exit....!Check list"
 fi
